@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.BookCard {
+  box-shadow: 5px 5px 10px #604bd739 !important;
+  border-radius: 5px;
+}
+.tabs {
+  margin: 5px;
+  padding: 9px;
+  border-radius: 5px;
+  transition: all 0.5s;
+  justify-content: center;
+}
+.tabs:hover {
+  background-color: #ada7ef78;
+}
+.forrelative {
+  position: relative;
+}
+.dotbtn {
+  position: absolute;
+  background-color: white;
+  padding: 7px;
+  box-shadow: 5px 5px 15px #ada7efa2;
+  border-radius: 4px;
+  right: 50px;
+  bottom: 8px;
+  overflow: hidden;
+  display: none;
+}
+.maindot > .dotbtn {
+  display: block;
+}
+.after {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  border-bottom-left-radius: 3.5px;
+  clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+  background-color: white;
+  right: 78px;
+  transform: rotate(-135deg);
+  bottom: 20px;
+}
+
+.dotbtn ul li {
+  font-size: 15px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 2px;
+  color: black;
+}
+.dotbtn ul li:nth-child(2) {
+  color: red;
+}
+.dotbtn ul li:hover {
+  background-color: #dcd9f84a;
+}

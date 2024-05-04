@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: #5E48D6; */
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+}
+.sidebar {
+  overflow-y: auto !important;
+  height: 80vh !important;
+}
+.sidebarmain {
+  width: 350px;
+  flex-shrink: 0;
+  background-color: #f5f4fe;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0px 24px 24px;
+}
+
+.sidebar-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.sidebar-header a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100px;
+  color: #5e48d6;
+  font-weight: 900;
+  font-size: 25px;
+}
+.sidebar-header a img {
+  height: 50px;
+}
+.sidebar-body .dropdown {
+  /* margin-bottom: 20px; */
+ 
+  border-radius: 0.5rem;
+  padding: 5px;
+}
+
+img {
+  object-fit: contain !important;
+}
+.dropdown .username {
+  color: #5e48d6;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.dropdown .role {
+  color: grey;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.sidebar-divider {
+  list-style: none;
+  color: grey;
+  font-size: 14px;
+}
+
+.container {
+  flex-grow: 1;
+  background-color: #f5f4fe;
+  background-position: center;
+}
+.title {
+  font-size: 3em;
+}
+.info {
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 1.5em;
+  color: rgb(224, 224, 224);
+}
+.btn {
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  padding: 0.75em 1em;
+  font-size: 1em;
+  letter-spacing: 1px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: rgb(134, 49, 0);
+  color: #fff;
+}
+
+/* -----------------main ---------------- */
+
+.sidebar-item {
+  padding: 5px 1em;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.sidebar-title {
+  display: flex;
+  font-size: 1.2em;
+  justify-content: space-between;
+  align-items: center !important;
+  padding: 0 10px;
+  border-radius: 7px;
+  height: 50px;
+  cursor: pointer;
+}
+.sidebar-title:hover {
+  background-color: #ada7ef5a;
+  transition: all 0.5s;
+}
+
+.sidebar-title span i {
+  width: 1.5em;
+}
+.sidebar-title .toggle-btn {
+  cursor: pointer;
+  transition: transform 0.3s;
+  display: grid;
+  place-items: center;
+  transition: all 0.3s !important;
+}
+.sidebar-item.open > .sidebar-title .toggle-btn {
+  transform: rotate(90deg);
+  transition: all 0.3s;
+}
+.item-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.itemicons {
+  width: 35px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.itemicons i,
+.titles {
+  color: black;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.sidebar-item.plain:hover .itemicons i,
+.sidebar-title:hover .itemicons i {
+  font-size: 24px !important;
+  color: #5e48d6;
+}
+.sidebar-item.plain:hover .titles,
+.sidebar-title:hover .toggle-btn,
+.sidebar-title:hover .titles {
+  color: #5e48d6;
+  font-weight: 600;
+  transition: all 0.01s;
+}
+.sidebar-item.plain {
+  display: flex;
+  height: 52px;
+  align-items: center;
+  color: red;
+  /* height: 55px; */
+}
+
+.sidebar-content {
+  padding-top: 0.25em;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.sidebar-item.open > .sidebar-content {
+  height: auto;
+  transition: all 0.3s;
+}
+.sidebar-item.open > .sidebar-title {
+  background-color: #ada7ef5a;
+}
+.sidebar-item.open > .sidebar-title .titles {
+  color: #5e48d6;
+  font-weight: 600;
+  transition: all 0.01s;
+}
+.sidebar-item.open > .sidebar-title .toggle-btn {
+  color: #5e48d6;
+  font-weight: 600;
+  transition: all 0.01s;
+}
+.sidebar-item.open > .sidebar-item.plain .itemicons i {
+  font-size: 24px !important;
+  color: #5e48d6;
+}
+.sidebar-item.open > .sidebar-title .itemicons i {
+  font-size: 24px !important;
+  color: #5e48d6;
+}
+
+.sidebar-title .titles .sidebar-item.plain {
+  text-decoration: none;
+}
+
+.active{
+  @apply    text-white font-bold py-2 px-4 rounded;
+}
+

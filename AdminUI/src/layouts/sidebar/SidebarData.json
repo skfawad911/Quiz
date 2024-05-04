@@ -1,0 +1,85 @@
+[
+    {
+        "title": "Dashboard",
+        "icon": "bi bi-pie-chart-fill",
+        "path": "/dashboard"
+    },
+    {
+        "title": "Questions",
+        "icon": "bi bi-question-circle-fill",
+        "childrens": [
+            {
+                "title": "View Questions",
+                "icon": "bi bi-list-stars",
+                "path": "/dashboard/questions"
+            },
+            {
+                "title": "Create Questions",
+                "icon": "bi bi-patch-plus-fill",
+                "path": "/dashboard/createquestions"
+            }
+        
+        ]
+    },
+    {
+        "title": "Doctors",
+        "icon": "bi bi-people-fill",
+        "childrens": [
+            {
+                "title": "Doctors List",
+                "icon": "bi bi-list-stars",
+                "path": "/dashboard/product-list"
+            },
+            {
+                "title": "Add Doctor",
+                "icon": "bi bi-patch-plus-fill",
+                "path": "/dashboard/add-product"
+            }
+       
+        ]
+    },
+    {
+        "title": "Categories",
+        "icon": "bi bi-tags-fill",
+        "childrens": [
+            {
+                "title": "Categories List",
+                "icon": "bi bi-list-stars",
+                "path": "/dashboard/category-list"
+            },
+            {
+                "title": "Add Categories",
+                "icon": "bi bi-patch-plus-fill",
+                "path": "/dashboard/add-category"
+            }
+        ]
+    },
+    {
+        "title": "Reports",
+        "icon": "bi bi-person-vcard",
+        "path": "/dashboard/reports"
+    },
+    {
+        "title": "Settings",
+        "icon": "bi bi-gear-fill",
+        "childrens": [
+            {
+                "title": "UploadAllData",
+                "icon": "bi bi-cloud-arrow-up-fill",
+                "path": "/dashboard/user-list"
+            },
+            {
+                "title": "Manage",
+                "icon": "bi bi-kanban-fill",
+                "path": "/dashboard/makeadmins"
+            },
+            {
+                "title": "ManageMR",
+                "icon": "bi bi-kanban-fill",
+                "path": "/dashboard/mr"
+            }
+           
+        ]
+    }
+   
+]

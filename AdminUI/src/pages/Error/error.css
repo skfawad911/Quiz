@@ -1,0 +1,42 @@
+/*======================
+     Error Page One 404 page
+=======================*/
+.ErrorBtn {
+  margin: 30px 0 !important;
+}
+.page_404 {
+  padding: 40px 0;
+  font-family: "Arvo", serif;
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerError {
+  width: 80%;
+}
+
+.four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 400px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.col-sm-12 h1 {
+  font-size: 7rem !important;
+  color: #333 !important;
+  font-weight: 700;
+}
+.contant_box_404 h3 {
+  font-size: 30px !important;
+  font-weight: 600;
+}
+.msgs {
+  font-size: 1.5rem;
+  color: #666;
+}
+.contant_box_404 {
+  margin-top: -50px !important;
+}

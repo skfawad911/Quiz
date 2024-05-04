@@ -1,0 +1,25 @@
+.dashboards .icon svg {
+  color: white;
+  background-color: #604bd7d5;
+  width: 70px;
+  height: 70px;
+  padding: 10px !important;
+  border-radius: 50%;
+}
+.dashboards .user {
+  box-shadow: 5px 5px 10px #604bd77a;
+  text-align: center;
+  padding: 30px;
+}
+.dashboards .user b {
+  font-size: 20px !important;
+  font-weight: 600;
+  margin: 8px 0;
+  color: rgba(0, 0, 0, 0.575);
+}
+
+.dashboards .user p {
+  font-size: 25px;
+  margin: 8px 0;
+  font-weight: 700;
+}

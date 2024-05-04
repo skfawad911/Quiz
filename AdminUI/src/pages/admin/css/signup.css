@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* main color ada7ef */
+}
+/* =============================fFOR SIGNUP PAGE=================================== */
+.headings {
+  color: #ada7ef;
+  text-align: start;
+  width: 60%;
+  font-size: 25px !important;
+  font-weight: 700;
+  margin-top: 17px !important ;
+  position: relative;
+}
+
+.adminIMG {
+  width: 100% !important;
+  object-fit: contain;
+  /* cursor: pointer; */
+}
+label {
+  font-size: 14px !important;
+}
+.signupcomon {
+  background-color: #ada7ef !important;
+  width: 150px !important;
+}
+
+/* =============================FOR SIGNIN PAGE=================================== */
+
+.ptaglogin {
+  color: grey !important;
+  text-align: start !important;
+  width: 60%;
+  margin: 0px 0 4px 0 !important;
+  font-size: 12px !important;
+  cursor: pointer;
+}
+.saytext {
+  color: black;
+  font-size: 11px;
+}
+.icondiv {
+  display: flex;
+  gap: 10px;
+}
+.loginaccount {
+  color: #ada7ef !important;
+  text-transform: capitalize !important;
+  border: 1px solid #ada7ef !important;
+}
