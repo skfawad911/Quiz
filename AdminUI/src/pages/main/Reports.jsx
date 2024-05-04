@@ -24,7 +24,7 @@ const Reports = () => {
     // console.log("adminId",id);
     axios
       .get(
-        `https://somprazquiz1-2.digilateral.com/api/mr-data/${id}`
+        `http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/mr-data/${id}`
       )
       .then((res) => {
         setMrs(res.data);
@@ -32,7 +32,7 @@ const Reports = () => {
   };
 
   const fetchAllMrsRegion = () => {
-    fetch("https://somprazquiz1-2.digilateral.com/api/mr-all-region")
+    fetch("http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/mr-all-region")
       .then((res) => res.json())
       .then((data) => {
         console.log(" Region Data ", data);
@@ -42,7 +42,7 @@ const Reports = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("https://adminsomprazquiz1-2.digilateral.com/onlyactivecategories")
+    fetch("http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5000/onlyactivecategories")
       .then((response) => response.json())
       .then((data) => {
         setLoading(false);
@@ -61,7 +61,7 @@ const Reports = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `https://somprazquiz1-2.digilateral.com/api/v3/get-all-doctor-mrs-data`
+          `http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/v3/get-all-doctor-mrs-data`
         );
         const data = await response.json();
         setOriginalDoctorData(data);

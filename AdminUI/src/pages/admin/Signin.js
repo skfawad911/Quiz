@@ -69,7 +69,7 @@ export default function Signin() {
     onSubmit: async (values) => {
       try {
         const response = await fetch(
-          "https://somprazquiz1-2.digilateral.com/api/admin-login",
+          "http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/admin-login",
           {
             method: "POST",
             headers: {

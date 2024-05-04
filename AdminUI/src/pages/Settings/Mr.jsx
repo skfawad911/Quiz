@@ -43,7 +43,7 @@ const Mr = () => {
   useEffect(() => {
     setloading(true);
     fetch(
-      `https://somprazquiz1-2.digilateral.com/api/admin-mrs/${id}`
+      `http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/admin-mrs/${id}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -53,7 +53,7 @@ const Mr = () => {
   }, [id, stat]);
 
   function fetMrData(id) {
-    fetch(`https://somprazquiz1-2.digilateral.com/api/get-mr-by-id/${id}`)
+    fetch(`http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/get-mr-by-id/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setMrDetails({
@@ -81,7 +81,7 @@ const Mr = () => {
   };
 
   const handleUpdateMr = () => {
-    fetch("https://somprazquiz1-2.digilateral.com/api/update-mr-details", {
+    fetch("http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/update-mr-details", {
       method: "PUT",
       headers: {
         "content-type": "application/json",

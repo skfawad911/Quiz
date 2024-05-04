@@ -44,7 +44,7 @@ const AllDataExcel = () => {
       setLoading(true);
 
       const response = await fetch(
-        `https://somprazquiz1-2.digilateral.com/api/upload-sheet/${id}`,
+        `http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/upload-sheet/${id}`,
         {
           method: "POST",
           body: formData,

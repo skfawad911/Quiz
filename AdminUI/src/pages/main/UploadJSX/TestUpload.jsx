@@ -20,7 +20,7 @@ export default function FileUpload() {
       try {
         const header = "Access-Control-Allow-Origin";
         const response = await axios.post(
-          "https://adminsomprazquiz1-2.digilateral.com/api/upload-csv-file",
+          "http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5000/api/upload-csv-file",
           formData,
           header,
           {

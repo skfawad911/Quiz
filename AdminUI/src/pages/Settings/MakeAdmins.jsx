@@ -147,7 +147,7 @@ export default function CustomizedAccordions() {
     formData.append("image", image);
 
     const response = await axios.put(
-      `https://somprazquiz1-2.digilateral.com/api/update-admin-logo/659bad0fe5efaf29c436304a`,
+      `http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/update-admin-logo/659bad0fe5efaf29c436304a`,
       formData,
       {
         headers: {
@@ -168,7 +168,7 @@ export default function CustomizedAccordions() {
     console.log({ Name, AdminId, Password, Gender, MobileNumber });
 
     try {
-      fetch(`https://somprazquiz1-2.digilateral.com/api/create-super-admin`, {
+      fetch(`http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/create-super-admin`, {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -217,7 +217,7 @@ export default function CustomizedAccordions() {
     e.preventDefault();
     console.log({ Name, AdminId, Password, Gender, MobileNumber });
     try {
-      fetch(`https://somprazquiz1-2.digilateral.com/api/create-content-admin`, {
+      fetch(`http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/create-content-admin`, {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -266,7 +266,7 @@ export default function CustomizedAccordions() {
     console.log({ Name, AdminId, Password, Gender, MobileNumber });
 
     try {
-      fetch(`https://somprazquiz1-2.digilateral.com/api/create-report-admin`, {
+      fetch(`http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/create-report-admin`, {
         method: "POST",
         headers: {
           Accept: "application/json",

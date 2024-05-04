@@ -67,7 +67,7 @@ const EditQuestion = () => {
     const fetchQuestionDetails = async () => {
       try {
         const response = await fetch(
-          `https://adminsomprazquiz1-2.digilateral.com/api/getquestion/${questionId}`
+          `http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5000/api/getquestion/${questionId}`
         );
 
         if (response.ok) {
@@ -90,7 +90,7 @@ const EditQuestion = () => {
   const handleEdit = async () => {
     try {
       const response = await fetch(
-        `https://adminsomprazquiz1-2.digilateral.com/api/updatequestions/${questionId}`,
+        `http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5000/api/updatequestions/${questionId}`,
         {
           method: "PUT",
           headers: {

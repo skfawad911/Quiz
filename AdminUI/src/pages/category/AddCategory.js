@@ -31,7 +31,7 @@ export const AddCategory = () => {
 
     try {
       const response = await fetch(
-        "https://adminsomprazquiz1-2.digilateral.com/categories",
+        "http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5000/categories",
         {
           method: "POST",
           headers: {

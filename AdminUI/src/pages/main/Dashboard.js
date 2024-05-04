@@ -13,7 +13,7 @@ const Dash = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `https://somprazquiz1-2.digilateral.com/api/get-top-20-mrs/${id}`
+          `http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/get-top-20-mrs/${id}`
         );
         const data = await response.json();
         settop20mr(data);
@@ -29,7 +29,7 @@ const Dash = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://somprazquiz1-2.digilateral.com/api/top-mr-by-doctor"
+          "http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/top-mr-by-doctor"
         );
         const data = await response.json();
         setTopMRData(data);
@@ -45,7 +45,7 @@ const Dash = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://somprazquiz1-2.digilateral.com/api/top-category-chart"
+          "http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/top-category-chart"
         );
         const data = await response.json();
         setCategoriesData(data);
@@ -61,7 +61,7 @@ const Dash = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://somprazquiz1-2.digilateral.com/api/admin-side-reports"
+          "http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/admin-side-reports"
         );
 
         if (!response.ok) {
