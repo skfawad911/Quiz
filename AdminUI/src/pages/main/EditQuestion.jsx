@@ -67,7 +67,7 @@ const EditQuestion = () => {
     const fetchQuestionDetails = async () => {
       try {
         const response = await fetch(
-          `http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5000/api/getquestion/${questionId}`
+          `http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5000/api/getquestion/${questionId}`
         );
 
         if (response.ok) {
@@ -90,7 +90,7 @@ const EditQuestion = () => {
   const handleEdit = async () => {
     try {
       const response = await fetch(
-        `http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5000/api/updatequestions/${questionId}`,
+        `http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5000/api/updatequestions/${questionId}`,
         {
           method: "PUT",
           headers: {

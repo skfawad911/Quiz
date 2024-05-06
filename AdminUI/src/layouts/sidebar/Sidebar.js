@@ -58,7 +58,7 @@ const Sidebar = () => {
 
   // const fetchLogo = () => {
   //   fetch(
-  //     "http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/get-logo/659bad0fe5efaf29c436304a"
+  //     "http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5050/api/get-logo/659bad0fe5efaf29c436304a"
   //   )
   //     .then((res) => res.json())
   //     .then((data) => {
@@ -78,7 +78,7 @@ const Sidebar = () => {
         <div className="sidebar-header">
           {/* <div className="w-[70px] grid items-center mt-[20px]">
             <img
-              src={`http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/${logo}`}
+              src={`http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5050/${logo}`}
               className="w-full"
             />
           </div> */}

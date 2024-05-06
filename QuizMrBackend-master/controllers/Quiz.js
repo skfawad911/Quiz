@@ -543,7 +543,7 @@ exports.handleUserCategory = async (req, res) => {
 //     let OnlyActiveCategories = [];
 //     try {
 //       const response = await axios.get(
-//         "http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5000/onlyactivecategories"
+//         "http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5000/onlyactivecategories"
 //       );
 //       OnlyActiveCategories = response.data;
 //     } catch (error) {
@@ -559,7 +559,7 @@ exports.handleUserCategory = async (req, res) => {
 
 //         try {
 //           const response = await axios.get(
-//             `http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5000/api/questionsfour?category=${category}`
+//             `http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5000/api/questionsfour?category=${category}`
 //           );
 //           onlyFourActiveQuestions.push(response.data);
 //         } catch (error) {
@@ -571,7 +571,7 @@ exports.handleUserCategory = async (req, res) => {
 //     let MultipleQuestions = [];
 //     try {
 //       const response = await axios.get(
-//         "http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5000/api/questions"
+//         "http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5000/api/questions"
 //       );
 //       MultipleQuestions = response.data;
 //     } catch (error) {
@@ -635,7 +635,7 @@ exports.handleUserCategoryWithQuestion = async (req, res) => {
     let OnlyActiveCategories = [];
     try {
       const response = await axios.get(
-        "http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5000/onlyactivecategories"
+        "http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5000/onlyactivecategories"
       );
       OnlyActiveCategories = response.data;
     } catch (error) {
@@ -649,7 +649,7 @@ exports.handleUserCategoryWithQuestion = async (req, res) => {
 
         try {
           const response = await axios.get(
-            `http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5000/api/questionsfour?category=${category}`
+            `http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5000/api/questionsfour?category=${category}`
           );
           return response.data; // Return the data directly
         } catch (error) {
@@ -661,7 +661,7 @@ exports.handleUserCategoryWithQuestion = async (req, res) => {
     let MultipleQuestions = [];
     try {
       const response = await axios.get(
-        "http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5000/api/questions"
+        "http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5000/api/questions"
       );
       MultipleQuestions = response.data;
     } catch (error) {

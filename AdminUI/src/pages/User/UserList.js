@@ -20,7 +20,7 @@ const UserList = () => {
     const formData = new FormData();
     formData.append("file", file);
 
-    fetch(`http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/upload-sheet/${id}`, {
+    fetch(`http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5050/api/upload-sheet/${id}`, {
       method: "POST",
       body: formData,
     })

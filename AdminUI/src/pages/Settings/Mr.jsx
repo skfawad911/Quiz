@@ -43,7 +43,7 @@ const Mr = () => {
   useEffect(() => {
     setloading(true);
     fetch(
-      `http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/admin-mrs/${id}`
+      `http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5050/api/admin-mrs/${id}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -53,7 +53,7 @@ const Mr = () => {
   }, [id, stat]);
 
   function fetMrData(id) {
-    fetch(`http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/get-mr-by-id/${id}`)
+    fetch(`http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5050/api/get-mr-by-id/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setMrDetails({
@@ -81,7 +81,7 @@ const Mr = () => {
   };
 
   const handleUpdateMr = () => {
-    fetch("http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/update-mr-details", {
+    fetch("http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5050/api/update-mr-details", {
       method: "PUT",
       headers: {
         "content-type": "application/json",

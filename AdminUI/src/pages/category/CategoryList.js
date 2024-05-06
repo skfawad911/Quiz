@@ -22,7 +22,7 @@ export const CategoryList = () => {
   const confirmDelete = async () => {
     try {
       const response = await fetch(
-        `http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5000/categories/${categoryToDelete}`,
+        `http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5000/categories/${categoryToDelete}`,
         {
           method: "DELETE",
           headers: {
@@ -70,7 +70,7 @@ export const CategoryList = () => {
   //       (!currentStatus && activeCategoriesCount < maxActiveCategories)
   //     ) {
   //       const response = await fetch(
-  //         `http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5000/updatecategory/${categoryId}`,
+  //         `http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5000/updatecategory/${categoryId}`,
   //         {
   //           method: "PUT",
   //           headers: {
@@ -109,7 +109,7 @@ export const CategoryList = () => {
       console.log(activeCategoriesCountBeforeToggle);
 
       const response = await fetch(
-        `http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5000/updatecategory/${categoryId}`,
+        `http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5000/updatecategory/${categoryId}`,
         {
           method: "PUT",
           headers: {
@@ -180,7 +180,7 @@ export const CategoryList = () => {
   const fetchCategories = async () => {
     try {
       const response = await fetch(
-        "http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5000/allcategories"
+        "http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5000/allcategories"
       );
       if (response.ok) {
         const categoriesData = await response.json();

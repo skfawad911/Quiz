@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 export const ProductList = () => {
   const [doctorsData, setDoctorsData] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
-  const apiUrl = "http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/get/docter/name";
+  const apiUrl = "http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5050/api/get/docter/name";
 
   console.log(doctorsData);
 

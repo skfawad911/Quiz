@@ -24,7 +24,7 @@ export const Home = () => {
   });
 
   const handleDeleteQuestion = async (questionId) => {
-    let baseUrl = `http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5000/api/delquestions/${questionId}`;
+    let baseUrl = `http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5000/api/delquestions/${questionId}`;
     let url = baseUrl;
 
     try {
@@ -60,7 +60,7 @@ export const Home = () => {
   };
 
   //get all questions
-  const baseUrl = "http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5000/api/questions";
+  const baseUrl = "http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5000/api/questions";
 
   useEffect(() => {
     const fetchData = async () => {

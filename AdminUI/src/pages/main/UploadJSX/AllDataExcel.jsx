@@ -44,7 +44,7 @@ const AllDataExcel = () => {
       setLoading(true);
 
       const response = await fetch(
-        `http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5050/api/upload-sheet/${id}`,
+        `http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5050/api/upload-sheet/${id}`,
         {
           method: "POST",
           body: formData,

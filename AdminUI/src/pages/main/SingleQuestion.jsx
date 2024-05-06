@@ -30,7 +30,7 @@ const SingleQuestion = () => {
       answerOptions,
     };
 
-    let baseUrl = "http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5000/api/createquestions";
+    let baseUrl = "http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5000/api/createquestions";
 
     let url = baseUrl;
 
@@ -100,7 +100,7 @@ const SingleQuestion = () => {
     const fetchCategories = async () => {
       try {
         const response = await fetch(
-          "http://main-alb-773490635.ap-south-1.elb.amazonaws.com:5000/onlyactivecategories"
+          "http://check-alb-1122689352.ap-south-1.elb.amazonaws.com:5000/onlyactivecategories"
         );
         if (response.ok) {
           const data = await response.json();
